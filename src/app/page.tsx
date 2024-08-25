@@ -19,34 +19,6 @@ export default function Home() {
             animateCircle={true}
           />
         </PreviewCard>
-
-        <PreviewCard
-          title="Animated Progress"
-          subline="AnimatedProgress.tsx"
-          technologies="Next.js, TypeScript, framer-motion, Tailwind CSS"
-        >
-          <AnimatedProgress
-            size={44}
-            strokeWidth={6}
-            progress={75}
-            animateNumber={true}
-            animateCircle={true}
-          />
-        </PreviewCard>
-
-        <PreviewCard
-          title="Animated Progress"
-          subline="AnimatedProgress.tsx"
-          technologies="Next.js, TypeScript, framer-motion, Tailwind CSS"
-        >
-          <AnimatedProgress
-            size={44}
-            strokeWidth={6}
-            progress={75}
-            animateNumber={true}
-            animateCircle={true}
-          />
-        </PreviewCard>
       </div>
     </section>
   );

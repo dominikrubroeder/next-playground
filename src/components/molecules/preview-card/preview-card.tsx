@@ -17,7 +17,7 @@ export default function PreviewCard({
   return (
     <div className="relative rounded border border-border p-4">
       <div className="absolute right-2 top-2 space-x-2 text-xs">
-        <PreviewCode />
+        <PreviewCode code={code} />
       </div>
       <div className="flex size-32 w-full items-center justify-center">
         {children}
