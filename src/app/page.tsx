@@ -1,6 +1,6 @@
-import AnimatedProgress from "@/components/animated-progress";
+import AnimatedProgress from "@/components/atoms/animated-progress";
 import React from "react";
-import PreviewCard from "@/components/preview-card";
+import PreviewCard from "@/components/molecules/preview-card/preview-card";
 
 export default function Home() {
   return (
