@@ -13,10 +13,10 @@ export default function Home() {
         >
           <AnimatedProgress
             size={44}
-            strokeWidth={6}
-            progress={75}
+            strokeWidth={8}
+            progress={100}
             animateNumber={true}
-            animateCircle={true}
+            animateProgress={true}
           />
         </PreviewCard>
       </div>

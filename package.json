@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "upgrade-next@latest": "npm i next@latest react@latest react-dom@latest eslint-config-next@latest @types/react @types/react-dom"
+    "upgrade-next@latest": "npm i next@latest react@latest react-dom@latest --save-exact && npm i eslint-config-next@latest @types/react @types/react-dom --save-dev --save-exact"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
@@ -15,11 +15,11 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.30",
     "lucide-react": "^0.435.0",
-    "next": "^14.2.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "motion": "12.25.0",
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -28,13 +28,13 @@
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8",
-    "eslint-config-next": "^14.2.6",
-    "eslint-plugin-tailwindcss": "^3.15.1",
-    "postcss": "^8.4.41",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.1",
+    "eslint-plugin-tailwindcss": "3.18.2",
+    "postcss": "8.5.6",
     "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.10",
+    "prettier-plugin-tailwindcss": "0.7.2",
+    "tailwindcss": "3.4.19",
     "typescript": "^5"
   }
 }

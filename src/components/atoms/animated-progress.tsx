@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface AnimatedProgressProps {
@@ -9,7 +9,7 @@ interface AnimatedProgressProps {
   strokeWidth?: number;
   progress?: number;
   animateNumber?: boolean;
-  animateCircle?: boolean;
+  animateProgress?: boolean;
   color?: "text-primary" | string;
   strokeColor?: "stroke-primary" | string;
   backgroundColor?: "bg-background" | string;
@@ -20,7 +20,7 @@ export default function AnimatedProgress({
   strokeWidth = 15,
   progress = 75,
   animateNumber = true,
-  animateCircle = true,
+  animateProgress = true,
   color = "text-primary",
   strokeColor = "stroke-primary",
   backgroundColor = "bg-background",
@@ -38,7 +38,7 @@ export default function AnimatedProgress({
 
   useEffect(() => {
     if (inView) {
-      if (animateCircle) {
+      if (animateProgress) {
         controls.start({
           strokeDashoffset: circumference - (progress / 100) * circumference,
           transition: { duration: 2, ease: "easeInOut" },
@@ -62,7 +62,14 @@ export default function AnimatedProgress({
         window.requestAnimationFrame(step);
       }
     }
-  }, [controls, inView, circumference, progress, animateNumber, animateCircle]);
+  }, [
+    controls,
+    inView,
+    circumference,
+    progress,
+    animateNumber,
+    animateProgress,
+  ]);
 
   return (
     <div
@@ -99,7 +106,7 @@ export default function AnimatedProgress({
             strokeLinecap="round"
             strokeDasharray={circumference}
             initial={
-              animateCircle
+              animateProgress
                 ? { strokeDashoffset: circumference }
                 : {
                     strokeDashoffset:
